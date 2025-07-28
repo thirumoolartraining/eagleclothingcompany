@@ -243,9 +243,9 @@ const About: React.FC = () => {
             
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg"
+                src="/images/about/our-people-culture.png"
                 alt="Eagle Clothing team"
-               className="rounded-2xl shadow-2xl aspect-[3/2] object-cover"
+                className="rounded-2xl shadow-2xl aspect-[3/2] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#DAA520] to-transparent opacity-20 rounded-2xl"></div>
             </div>
