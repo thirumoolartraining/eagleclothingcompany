@@ -35,33 +35,6 @@ const About: React.FC = () => {
     }
   ];
 
-  const leadership = [
-    {
-      name: 'Michael Chen',
-      role: 'Chief Executive Officer',
-      experience: '25+ years in global textile manufacturing',
-      image: 'https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg'
-    },
-    {
-      name: 'Sarah Rodriguez',
-      role: 'Head of Global Operations',
-      experience: '20+ years in international trade and logistics',
-      image: 'https://images.pexels.com/photos/769732/pexels-photo-769732.jpeg'
-    },
-    {
-      name: 'David Kumar',
-      role: 'VP of Sustainability',
-      experience: '15+ years in sustainable textile innovation',
-      image: 'https://images.pexels.com/photos/1656685/pexels-photo-1656685.jpeg'
-    },
-    {
-      name: 'Emily Thompson',
-      role: 'Director of Quality Assurance',
-      experience: '18+ years in advanced quality systems',
-      image: 'https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg'
-    }
-  ];
-
   const stats = [
     { number: '1+', label: 'Years in Business', icon: <Calendar className="w-6 h-6" /> },
     { number: '15+', label: 'Countries Served', icon: <Globe className="w-6 h-6" /> },
@@ -74,11 +47,13 @@ const About: React.FC = () => {
       {/* Hero Section */}
       <section className="relative bg-[#1C1C1C] text-white">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg)'
+            backgroundImage: 'url(/images/hero/hero.png)'
           }}
-        />
+        >
+          <div className="absolute inset-0 bg-[#1C1C1C] bg-opacity-70"></div>
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">
@@ -145,9 +120,9 @@ const About: React.FC = () => {
             
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg"
+                src="/images/about/our-journey.png"
                 alt="Eagle Clothing Company facility"
-               className="rounded-2xl shadow-2xl aspect-[3/2] object-cover"
+                className="rounded-2xl shadow-2xl aspect-[3/2] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#DAA520] to-transparent opacity-20 rounded-2xl"></div>
             </div>
@@ -221,48 +196,7 @@ const About: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* Leadership Team */}
-      <section className="py-20 bg-[#F3F4F6]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-[#1C1C1C] mb-4">
-              Leadership Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Experienced industry leaders driving innovation, sustainability, and excellence in global B2B apparel manufacturing.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {leadership.map((leader, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-sm overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="aspect-square relative overflow-hidden">
-                  <img
-                    src={leader.image}
-                    alt={leader.name}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-40"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold text-[#1C1C1C] mb-2">
-                    {leader.name}
-                  </h3>
-                  <p className="text-[#DAA520] font-medium mb-2">
-                    {leader.role}
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    {leader.experience}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Company Culture */}
+{/* Company Culture */}
       <section className="py-20 bg-[#1C1C1C] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Clock, Send, MessageSquare, Globe, Users } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock, Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -58,7 +58,6 @@ const Contact: React.FC = () => {
       icon: <Mail className="w-6 h-6" />,
       title: 'Email Us',
       primary: 'info@eagleclothingcompany.fashion',
-      secondary: 'orders@eagleclothingcompany.fashion',
       description: 'Get detailed quotes and product information'
     },
     {
@@ -73,7 +72,8 @@ const Contact: React.FC = () => {
       title: 'Visit Our Facility',
       primary: 'No: 28, Alangari Amman Kovil Street',
       secondary: 'Naduvirpatti, Ettayapuram, Thoothukudi, Tamil Nadu-628902',
-      description: 'Schedule a factory tour and meeting'
+      description: 'Schedule a factory tour and meeting',
+      isBold: true
     },
     {
       icon: <Clock className="w-6 h-6" />,
@@ -81,27 +81,6 @@ const Contact: React.FC = () => {
       primary: 'Monday - Friday: 8:00 AM - 6:00 PM',
       secondary: 'Saturday: 9:00 AM - 2:00 PM',
       description: 'GMT-5 (Eastern Standard Time)'
-    }
-  ];
-
-  const departments = [
-    {
-      icon: <Users className="w-5 h-5" />,
-      title: 'Sales Team',
-      email: 'sales@eagleclothingcompany.fashion',
-      description: 'New business inquiries and quotes'
-    },
-    {
-      icon: <MessageSquare className="w-5 h-5" />,
-      title: 'Customer Service',
-      email: 'support@eagleclothingcompany.fashion',
-      description: 'Order support and general inquiries'
-    },
-    {
-      icon: <Globe className="w-5 h-5" />,
-      title: 'International Trade',
-      email: 'export@eagleclothingcompany.fashion',
-      description: 'Global shipping and customs support'
     }
   ];
 
@@ -316,11 +295,11 @@ const Contact: React.FC = () => {
                       <h4 className="font-semibold text-[#1C1C1C] mb-1">
                         {info.title}
                       </h4>
-                      <p className="text-[#1C1C1C] font-medium mb-1">
+                      <p className="text-[#1C1C1C] font-medium">
                         {info.primary}
                       </p>
                       {info.secondary && (
-                        <p className="text-gray-600 text-sm mb-2">
+                        <p className={`${info.isBold ? 'font-semibold' : 'text-gray-600'} text-sm mb-2`}>
                           {info.secondary}
                         </p>
                       )}

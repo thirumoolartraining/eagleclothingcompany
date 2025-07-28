@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="flex items-center space-x-2 text-sm text-gray-300">
               <Globe className="w-4 h-4" />
-              <span>Exporting Worldwide Since 1995</span>
+              <span>Exporting Worldwide Since 2024</span>
             </div>
           </div>
 
@@ -60,9 +60,9 @@ const Footer: React.FC = () => {
                 <Phone className="w-4 h-4" />
                 <span>+91 99942 89193</span>
               </div>
-              <div className="flex items-center space-x-2 text-sm text-gray-300">
-                <MapPin className="w-4 h-4" />
-                <span>No: 28, Alangari Amman Kovil Street, Naduvirpatti</span>
+              <div className="flex items-start space-x-2 text-sm text-gray-300">
+                <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <span>No: 28, Alangari Amman Kovil Street,<br />Naduvirpatti, Ettayapuram,<br />Thoothukudi, Tamil Nadu-628902</span>
               </div>
             </div>
             

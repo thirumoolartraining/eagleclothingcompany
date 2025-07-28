@@ -1,5 +1,5 @@
 import React from 'react';
-import { Factory, Users, Award, Truck, Shield, Zap, Globe, CheckCircle } from 'lucide-react';
+import { Factory, Users, Award, Shield, Zap, Globe, CheckCircle } from 'lucide-react';
 
 const Manufacturing: React.FC = () => {
   const capabilities = [
@@ -59,37 +59,37 @@ const Manufacturing: React.FC = () => {
       step: '01',
       title: 'Design & Sampling',
       description: 'Pattern development, material selection, and prototype creation.',
-      image: 'https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg'
+      image: '/images/production-process/1.png'
     },
     {
       step: '02',
       title: 'Material Sourcing',
       description: 'Premium fabric procurement from certified sustainable suppliers.',
-      image: 'https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg'
+      image: '/images/production-process/2.png'
     },
     {
       step: '03',
       title: 'Production Planning',
       description: 'Optimized scheduling and resource allocation for efficiency.',
-      image: 'https://images.pexels.com/photos/769732/pexels-photo-769732.jpeg'
+      image: '/images/production-process/3.png'
     },
     {
       step: '04',
       title: 'Manufacturing',
       description: 'Precision cutting, expert sewing, and quality finishing.',
-      image: 'https://images.pexels.com/photos/1656685/pexels-photo-1656685.jpeg'
+      image: '/images/production-process/4.png'
     },
     {
       step: '05',
       title: 'Quality Control',
       description: 'Comprehensive inspection and testing at multiple checkpoints.',
-      image: 'https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg'
+      image: '/images/production-process/5.png'
     },
     {
       step: '06',
       title: 'Packaging & Shipping',
       description: 'Professional packaging and global logistics coordination.',
-      image: 'https://images.pexels.com/photos/1656684/pexels-photo-1656684.jpeg'
+      image: '/images/production-process/6.png'
     }
   ];
 
@@ -98,11 +98,13 @@ const Manufacturing: React.FC = () => {
       {/* Hero Section */}
       <section className="relative bg-[#1C1C1C] text-white">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg)'
+            backgroundImage: 'url(/images/hero/hero.png)'
           }}
-        />
+        >
+          <div className="absolute inset-0 bg-[#1C1C1C] bg-opacity-70"></div>
+        </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl">
             <h1 className="text-5xl font-bold mb-6">

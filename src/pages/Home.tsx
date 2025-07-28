@@ -59,7 +59,7 @@ const Home: React.FC = () => {
         <div 
           className="relative bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg)'
+            backgroundImage: 'url(/images/hero/hero.png)'
           }}
         >
           <div className="absolute inset-0 bg-[#1C1C1C] bg-opacity-70"></div>
@@ -180,9 +180,9 @@ const Home: React.FC = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/7055639/pexels-photo-7055639.jpeg"
-                alt="Manufacturing facility"
-               className="rounded-2xl shadow-2xl aspect-[3/2] object-cover"
+                src="/images/manufacturing/state-of-the-art.png"
+                alt="State-of-the-art manufacturing facility"
+                className="rounded-2xl shadow-2xl aspect-[3/2] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#DAA520] to-transparent opacity-20 rounded-2xl"></div>
             </div>
